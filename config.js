@@ -13,7 +13,7 @@ Yg Reupload Tanpa Kasih Cr
 Sc Akan Saya Encode
 
 Base : Hisoka
-Recode : Naze & ( Nama Lu )
+Recode : Naze & Gerall
 
 **/
 
@@ -31,11 +31,11 @@ global.APIKeys = {
 }
 
 // Other
-global.owner = ['6285875158363']
-global.ownernomer = "6285875158363"
-global.premium = ['6285875158363']
+global.owner = ['6282196995322']
+global.ownernomer = "6282196995322"
+global.premium = ['6287894034440']
 global.packname = 'Sticker By'
-global.author = 'Naze Dev'
+global.author = 'Rall'
 global.sessionName = 'nazedev'  //jangan diganti bro nanti error
 global.jumlha = '999'
 global.jumhal = '100000000000000'
@@ -62,13 +62,13 @@ global.limitawal = {
 }
 global.thumb = fs.readFileSync('./media/image/naze.jpg')
 global.faall = fs.readFileSync('./media/image/fake.jpg')
-global.mygit = 'https://github.com/nazedev'
-global.myyt = 'https://youtube.com/c/Nazedev'
-global.myytv = 'https://youtu.be/ey7qLuRBm5Y'
-global.mygc = "https://chat.whatsapp.com/Khpnk6svwIhCIvx91Xi0Vf"
-global.botname = 'Naze Dev'
-global.akulaku = 'Bot By Naze'
-global.ytname = 'YT NAZE'
+global.mygit = 'https://github.com/Gerall09'
+global.myyt = 'https://youtube.com/c/AlmGrll'
+global.myytv = 'https://youtu.be/'
+global.mygc = "https://chat.whatsapp.com/DQeeZf6Ri4t7HBEigOVi3V"
+global.botname = 'Gda Nama'
+global.akulaku = 'Y'
+global.ytname = 'YT AlmGrll'
 
 
 let file = require.resolve(__filename)
