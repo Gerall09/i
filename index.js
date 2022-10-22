@@ -116,15 +116,15 @@ async function startNaze() {
        }
        let wm_nazedev = { url : ppgc }
        if (pea[0].announce == true) {
-       naze.send5ButImg(pea[0].id, `「 *Group Settings Change* 」\n\nGroup telah ditutup oleh admin, Sekarang hanya admin yang dapat mengirim pesan !`, `Group Settings Change Message by Naze Dev`, wm_nazedev, [])
+       naze.send5ButImg(pea[0].id, `「 *Group Settings Change* 」\n\nGroup telah ditutup oleh admin, Sekarang hanya admin yang dapat mengirim pesan !`, `Group Settings Change Message by Rall`, wm_Rall, [])
        } else if(pea[0].announce == false) {
-       naze.send5ButImg(pea[0].id, `「 *Group Settings Change* 」\n\nGroup telah dibuka oleh admin, Sekarang peserta dapat mengirim pesan !`, `Group Settings Change Message by Naze Dev`, wm_nazedev, [])
+       naze.send5ButImg(pea[0].id, `「 *Group Settings Change* 」\n\nGroup telah dibuka oleh admin, Sekarang peserta dapat mengirim pesan !`, `Group Settings Change Message by Rall`, wm_Rall, [])
        } else if (pea[0].restrict == true) {
-       naze.send5ButImg(pea[0].id, `「 *Group Settings Change* 」\n\nInfo group telah dibatasi, Sekarang hanya admin yang dapat mengedit info group !`, `Group Settings Change Message by Naze Dev`, wm_nazedev, [])
+       naze.send5ButImg(pea[0].id, `「 *Group Settings Change* 」\n\nInfo group telah dibatasi, Sekarang hanya admin yang dapat mengedit info group !`, `Group Settings Change Message by Rall`, wm_Rall, [])
        } else if (pea[0].restrict == false) {
-       naze.send5ButImg(pea[0].id, `「 *Group Settings Change* 」\n\nInfo group telah dibuka, Sekarang peserta dapat mengedit info group !`, `Group Settings Change Message by Naze Dev`, wm_nazedev, [])
+       naze.send5ButImg(pea[0].id, `「 *Group Settings Change* 」\n\nInfo group telah dibuka, Sekarang peserta dapat mengedit info group !`, `Group Settings Change Message by Rall`, wm_Rall, [])
        } else {
-       naze.send5ButImg(pea[0].id, `「 *Group Settings Change* 」\n\nGroup Subject telah diganti menjadi *${pea[0].subject}*`, `Group Settings Change Message by Naze Dev`, wm_nazedev, [])
+       naze.send5ButImg(pea[0].id, `「 *Group Settings Change* 」\n\nGroup Subject telah diganti menjadi *${pea[0].subject}*`, `Group Settings Change Message by Rall`, wm_Rall, [])
      }
     })
 
@@ -149,7 +149,7 @@ async function startNaze() {
                 }
                 
                 let buttons = [{ buttonId: 'donasi', buttonText: { displayText: '🙏Donasi' }, type: 1 },{ buttonId: 'rules', buttonText: { displayText: '❗Rules' }, type: 1 }]
-                let nyoutube = ('© Naze\nYoutube/Sc :\nhttps://youtube.com/c/Nazedev')
+                let nyoutube = ('© Geral\nYoutube/Sc :\nhttps://youtube.com/c/AlmGrll')
                 let jumhal = '100000000000000'
                 if (anu.action == 'add') {
                     naze.sendMessage(anu.id, { image: { url: ppuser }, fileLength: jumhal, contextInfo: { mentionedJid: [num] }, caption: `Welcome To ${metadata.subject} @${num.split("@")[0]}`, buttons: buttons, footer: nyoutube})
@@ -205,7 +205,7 @@ async function startNaze() {
 	for (let i of kon) {
 	    list.push({
 	    	displayName: await naze.getName(i + '@s.whatsapp.net'),
-	    	vcard: `BEGIN:VCARD\nVERSION:3.0\nN:${await naze.getName(i + '@s.whatsapp.net')}\nFN:${await naze.getName(i + '@s.whatsapp.net')}\nitem1.TEL;waid=${i}:${i}\nitem1.X-ABLabel:Ponsel\nitem2.EMAIL;type=INTERNET:nazedev@gmail.com\nitem2.X-ABLabel:Email\nitem3.URL:https://instagram.com/naze.dev\nitem3.X-ABLabel:Instagram\nitem4.ADR:;;Indonesia;;;;\nitem4.X-ABLabel:Region\nEND:VCARD`
+	    	vcard: `BEGIN:VCARD\nVERSION:3.0\nN:${await naze.getName(i + '@s.whatsapp.net')}\nFN:${await naze.getName(i + '@s.whatsapp.net')}\nitem1.TEL;waid=${i}:${i}\nitem1.X-ABLabel:Ponsel\nitem2.EMAIL;type=INTERNET:Rall@gmail.com\nitem2.X-ABLabel:Email\nitem3.URL:https://instagram.com/rall_nation09\nitem3.X-ABLabel:Instagram\nitem4.ADR:;;ISEKAI;;;;\nitem4.X-ABLabel:Region\nEND:VCARD`
 	    })
 	}
 	naze.sendMessage(jid, { contacts: { displayName: `${list.length} Kontak`, contacts: list }, ...opts }, { quoted })
